@@ -13,22 +13,8 @@
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
    
     <title>Document</title>
-    <style>
-   #hero {
-   	background-image: url('../images/bg.jpg');
-   	background-size: cover;
-   	background-position: top center;
-   	position: relative;
-   	z-index: 1;
-   } 
-   </style>
 </head>
 <body>
-<section id="hero">
-  <div class="hero container" >
-    
-  </div>
-</section>
   <nav class="navbar sticky-top  navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
     <a class="navbar-brand" href="#">MyBudget</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,26 +24,26 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="add.html">Add</a>
+          <a class="nav-link" href="/add">Add</a>
         </li> 
         <li class="nav-item">
-          <a class="nav-link" href="display.html">History</a>
+          <a class="nav-link" href="/display">History</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="limit.html">Limit</a>
+          <a class="nav-link" href="/limit">LIMIT</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
            Report
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="today.html">TODAY</a>
-            <a class="dropdown-item" href="month.html">Month</a>
+            <a class="dropdown-item" href="/today">TODAY</a>
+            <a class="dropdown-item" href="/month">Month</a>
             
-            <a class="dropdown-item" href="year.html">Year</a>
+            <a class="dropdown-item" href="/year">Year</a>
           </div>
         </li>
       </ul>
@@ -84,6 +70,7 @@
     
     </div>
   </nav>
-    
+    {% block body %} 
+    {% endblock %}
 </body>
 </html>

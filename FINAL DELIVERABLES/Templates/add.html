@@ -1,5 +1,3 @@
-
-
 {% extends 'base.html' %}
 
 {% block body %} 
@@ -18,14 +16,8 @@
                 </div>
                 <div class="form-group">
                      <label for="">Expense Amount</label> 
-                      <input class="form-control"  type="number"  name="amount" id="amount">
+                      <input class="form-control"  type="number" min="0" name="amount" id="amount">
                 </div>
-                <!-- <div class="form-group"> <label for="">Pay-Mode</label> 
-                    <input class="form-control" type="text" name="paymode" id="paymode">
-                </div>
-                <div class="form-group"> <label for="">Category</label> 
-                    <input class="form-control" type="text" name="category" id="category">
-                </div> -->
 
                 <div class="form-group">
                     <label for=""></label> 
@@ -37,7 +29,7 @@
                         <option name="epayment" value="epayment">epayment</option>
                         <option name="onlinebanking" value="onlinebanking">onlinebanking</option>
                     
-                    </select> 
+                    </select>
                 
                
                 
@@ -55,7 +47,7 @@
                         <option name = "other" value="other">other</option>
             
                     </select>
-                </div> 
+                </div>
 
                
                 

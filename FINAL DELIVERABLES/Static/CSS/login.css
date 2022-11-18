@@ -125,7 +125,7 @@ form{
 }
 
 .input-div.focus > .i > i{
-	color: #38d39f;
+	color: #fe34dd;
 }
 
 .input-div > div > input{
@@ -302,10 +302,8 @@ ul {
 
   }
   #app1{
-	  
+	  font-style: oblique;
 	  color:blue ;
-	  position:relative;
-	  right:40%;
   }
   #png{
 	  position: relative;
